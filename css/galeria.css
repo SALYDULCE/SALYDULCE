@@ -1,0 +1,147 @@
+.gallery__img{
+  object-fit: cover;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.gallery__img:hover{
+  transform: scale(1.05);
+}
+.gallery__img--big{
+  height: 400px;
+}
+.gallery__img--small{
+  height: 200px;
+}
+.modal {
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0,0,0,0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000000;
+  display: none;
+}
+.modal__content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.modal__img{
+  width: 50%;
+}
+.modal__boton{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background: #D84E2F;
+  font-size: 3.3em;
+  text-align: center;
+  border-radius: 50%;
+  font-family: monospace;
+}
+.modal--open{
+  display: block;
+}
+.platos__title{
+  text-align: center;
+  margin: 0;
+}
+.platos__precio{
+  text-align: center;
+  margin: 0;
+  color: #E0A933;
+}
+.title{
+  color: #D84E2F;
+  font-family: 'Pacifico', cursive;
+  font-weight: 100;
+}
+.contenedor{
+  margin: auto;
+  text-align: center;
+  font-size: 200px;
+  color: #D84E2F;
+}
+/*Pedidos por whatsap*/
+.contenedor spam{
+  color: #50D231;
+}
+.pedido{
+  font-size: 1.5em;
+}
+.titulo{
+  text-align: center;
+}
+.horizontalM{  
+  animation: horizontal 2.5s linear infinite;
+}
+@keyframes horizontal {
+  0%{
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(60px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+/*imagen en movimiento*/
+.contenedoranimado{
+  background: rgb(255, 255, 255);
+  color: #fff;
+  font-size: .8em;
+  top: 10px;
+  right: 10px;
+  height: 610px;
+}
+.imagenmovimiento{
+  height: 500px;
+  width: 500px;
+  animation: movimiento 2.5s linear infinite;
+}
+@keyframes movimiento {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(30px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+.itcolor{
+  color: black;
+}
+.textoanimado{
+  animation: texto 2.5s linear infinite;
+  color: hsl(49, 100%, 50%);
+}
+@keyframes texto {
+  0%{
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(60px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+/*Estilos de Ubicación al final de la pagina*/
+.icon-location_local{
+  cursor: pointer;
+  color:#f10808;
+  text-decoration: none;
+  font-size: 5.5em
+}
